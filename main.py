@@ -32,8 +32,8 @@ def get_main_keyboard():
     return keyboard
 
 def send_python_video(chat_id):
-    # Replace 'YOUR_PYTHON_VIDEO_ID' with the video ID or URL of the Python video you want to send
-    video_path = r'C:\Users\Oybek\Desktop\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'
+    # “YOUR_PYTHON_VIDEO_ID” ni video identifikatori yoki yubormoqchi bo‘lgan Python videosining URL manzili bilan almashtiring
+    video_path = r'C:\Users\Oybek\Desktop\teg_bot_c#\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'
     video = open(video_path, 'rb')
     bot.send_video(chat_id, video)
 
