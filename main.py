@@ -32,25 +32,21 @@ def get_main_keyboard():
     return keyboard
 
 def send_python_video(chat_id):
-    # “YOUR_PYTHON_VIDEO_ID” ni video identifikatori yoki yubormoqchi bo‘lgan Python videosining URL manzili bilan almashtiring
-    video_path = r'C:\Users\Oybek\Desktop\teg_bot_c#\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'
+    video_path = 'C:\Users\Oybek\Desktop\teg_bot_c#\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'  # Replace with the actual path of the Python video file
     video = open(video_path, 'rb')
     bot.send_video(chat_id, video)
 
-#def send_java_video(chat_id):
-#    # Replace 'YOUR_JAVA_VIDEO_ID' with the video ID or URL of the Java video you want to send
-#    video_id = 'https://yandex.ru/video/preview/14239982402621053091'
-#    bot.send_video(chat_id, video_id)
-#
-#def send_php_video(chat_id):
-#    # Replace 'YOUR_PHP_VIDEO_ID' with the video ID or URL of the Php video you want to send
-#    video_id = 'https://yandex.ru/video/preview/14239982402621053091'
-#    bot.send_video(chat_id, video_id)
-#
-#def send_csharp_video(chat_id):
-#    # Replace 'YOUR_CSHARP_VIDEO_ID' with the video ID or URL of the C# video you want to send
-#    video_id = 'https://yandex.ru/video/preview/14239982402621053091'
-#    bot.send_video(chat_id, video_id)
+def send_java_video(chat_id):
+    video_id = 'C:\Users\Oybek\Desktop\teg_bot_c#\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'  # Replace with the video ID or URL of the Java video you want to send
+    bot.send_video(chat_id, video_id)
+
+def send_php_video(chat_id):
+    video_id = 'C:\Users\Oybek\Desktop\teg_bot_c#\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'  # Replace with the video ID or URL of the Php video you want to send
+    bot.send_video(chat_id, video_id)
+
+def send_csharp_video(chat_id):
+    video_id = 'C:\Users\Oybek\Desktop\teg_bot_c#\teg_bot\498c9e3ed900e770b4412acefe9becbada24d82cf6506fc9f64beaee43fff115.mp4'  # Replace with the video ID or URL of the C# video you want to send
+    bot.send_video(chat_id, video_id)
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
